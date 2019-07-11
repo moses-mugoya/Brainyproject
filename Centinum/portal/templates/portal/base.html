@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Purpose Application UI is the following chapter we've finished in order to create a complete and robust solution next to the already known Purpose Website UI.">
+    <meta name="author" content="Webpixels">
+    <title>{% block title %}Purpose – Application UI Kit{% endblock %}</title>
+    {% load static %}
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'portal/assets/img/brand/favicon.png' %}" type="image/png">
+    <!-- Font Awesome 5 -->
+    <link rel="stylesheet" href="{% static 'portal/assets/libs/@fortawesome/fontawesome-free/css/all.min.css' %}">
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="{% static 'portal/assets/libs/fullcalendar/dist/fullcalendar.min.css' %}">
+    <!-- Purpose CSS -->
+    <link rel="stylesheet" href="{% static 'portal/assets/css/purpose.css' %}" id="stylesheet">
+</head>
+
+<body class="application application-offset">
+
+{% block body %}
+
+{% endblock %}
+
+{% load static %}
+<!-- Scripts -->
+<!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
+<script src="{% static 'portal/assets/js/purpose.core.js' %}"></script>
+<!-- Page JS -->
+<script src="{% static 'portal/assets/libs/progressbar.js/dist/progressbar.min.js' %}"></script>
+<script src="{% static 'portal/assets/libs/apexcharts/dist/apexcharts.min.js' %}"></script>
+<script src="{% static 'portal/assets/libs/moment/min/moment.min.js' %}"></script>
+<script src="{% static 'portal/assets/libs/fullcalendar/dist/fullcalendar.min.js' %}"></script>
+<!-- Purpose JS -->
+<script src="{% static 'portal/assets/js/purpose.js' %}"></script>
+<!-- Demo JS - remove it when starting your project -->
+<script src="{% static 'portal/assets/js/demo.js' %}"></script>
+</body>
+
+</html>

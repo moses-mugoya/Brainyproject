@@ -1,0 +1,8 @@
+{% for field in user_form %}
+<div class="form-group">
+    <label class="form-control-label">{{field.label_tag}}</label>
+    <div class="input-group input-group-merge">
+        {{field}}
+    </div>
+</div>
+{%endfor%}
